@@ -1190,6 +1190,7 @@ function main:Begin(PROPS)
         end
     end
 
+    --[[
     local TweenService = game:GetService("TweenService")
     local UserInputService = game:GetService("UserInputService")
     
@@ -1254,6 +1255,7 @@ function main:Begin(PROPS)
     window:GetPropertyChangedSignal("AbsoluteSize"):Connect(function()
         updateInitialPosition()
     end)
+    ]]--
 
     
     local TweenService = game:GetService("TweenService")
@@ -1310,12 +1312,12 @@ function main:Begin(PROPS)
             WindowElementContainer.Visible = false
             WindowPanelIcon.ImageTransparency = 0.3
             Window.BackgroundTransparency = 1
-            ResizeAll.Visible = false
+            -- ResizeAll.Visible = false
         else
             WindowElementContainer.Visible = true
             WindowPanelIcon.ImageTransparency = 0
             Window.BackgroundTransparency = 0.05
-            ResizeAll.Visible = true
+            -- ResizeAll.Visible = true
         end
         
     end)
@@ -1329,13 +1331,13 @@ function main:Begin(PROPS)
                 WindowElementContainer.Visible = false
                 WindowPanelIcon.ImageTransparency = 0.3
                 Window.BackgroundTransparency = 1
-                ResizeAll.Visible = false
+                -- ResizeAll.Visible = false
                 MinimiseButtonIcon.Rotation = 180
             else
                 WindowElementContainer.Visible = true
                 WindowPanelIcon.ImageTransparency = 0
                 Window.BackgroundTransparency = 0.05
-                ResizeAll.Visible = true
+                -- ResizeAll.Visible = true
                 MinimiseButtonIcon.Rotation = 0
             end
             
